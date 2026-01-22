@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 18px;
+  line-height: 1.4;
+}
+
+input {
+  padding: 8px;
+  margin: 6px 0;
+  width: 220px;
+}
+
+button {
+  padding: 10px 14px;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+#remainTodayBig.red {
+  color: #d40000;
+}
+
+#remainTodayBig.warn {
+  color: #ff9900;
+}
+
+#clock {
+  margin-top: 6px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.historyDay {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.historyDayTitle {
+  font-weight: bold;
+}
+
+.small {
+  font-size: 12px;
+  opacity: 0.75;
+}
