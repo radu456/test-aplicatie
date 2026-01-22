@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0f17" />
+  <title>Buget Zilnic</title>
+
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="manifest" href="./manifest.json" />
+</head>
+
+<body>
+  <h1>Buget Zilnic</h1>
+
+  <div id="clock"></div>
+
+  <hr />
+
+  <div id="dashboard">
+    <div><b>Rămâne azi de cheltuit</b></div>
+    <div id="remainTodayBig" style="font-size:44px;">0.00 RON</div>
+    <div>
+      Cheltuit azi <b id="spentToday">0.00</b> RON |
+      Rămâne azi <b id="remainToday">0.00</b> RON
+    </div>
+
+    <br />
+
+    <div><b>Buget zilnic (de mâine încolo)</b></div>
+    <div id="dailyBudgetFuture" style="font-size:24px;">0.00 RON</div>
+
+    <br />
+
+    <div><b>Introdu suma cheltuielii</b></div>
+
+    <input id="expenseAmount" type="number" inputmode="numeric" placeholder="ex: 55" />
+    <input id="expenseNote" type="text" placeholder="Notă (optional)" />
+    <button id="addExpenseBtn">Adaugă cheltuială</button>
+  </div>
+
+  <hr />
+
+  <h2>Statistici luna curentă</h2>
+  <div style="display:flex; gap:50px; flex-wrap:wrap;">
+    <div>
+      <div>Buget lunar</div>
+      <div style="font-size:28px;"><b id="monthlyBudget">0.00</b></div>
+    </div>
+    <div>
+      <div>Cheltuit total</div>
+      <div style="font-size:28px;"><b id="monthlySpent">0.00</b></div>
+    </div>
+    <div>
+      <div>Zile rămase</div>
+      <div style="font-size:28px;"><b id="daysLeft">0</b></div>
+    </div>
+    <div>
+      <div>Medie zilnică</div>
+      <div style="font-size:28px;"><b id="dailyAvg">0.00</b></div>
+    </div>
+  </div>
+
+  <hr />
+
+  <details>
+    <summary style="cursor:pointer"><b>Istoric cheltuieli (luna curentă)</b></summary>
+    <div id="history"></div>
+  </details>
+
+  <hr />
+
+  <details>
+    <summary style="cursor:pointer"><b>Setări</b></summary>
+    <div style="max-width:420px;">
+      <div>
+        <label>Buget lunar</label><br />
+        <input id="settingMonthlyBudget" type="number" inputmode="numeric" />
+      </div>
+      <br />
+      <div>
+        <label>Prag alertă (buget zilnic minim)</label><br />
+        <input id="settingWarnThreshold" type="number" inputmode="numeric" />
+      </div>
+      <br />
+      <div>
+        <label>Prag roșu (suma disponibilă azi devine roșie)</label><br />
+        <input id="settingRedThreshold" type="number" inputmode="numeric" />
+      </div>
+      <br />
+      <button id="saveSettingsBtn">Salvează</button>
+      <button id="resetMonthBtn">Reset lună</button>
+    </div>
+  </details>
+
+  <script src="./app.js"></script>
+</body>
+</html>
