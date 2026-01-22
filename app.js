@@ -251,3 +251,6 @@ document.getElementById("resetMonthBtn").addEventListener("click", () => {
 // Ticking
 render();
 setInterval(render, 1000);
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("./sw.js");
+}
