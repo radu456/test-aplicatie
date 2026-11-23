@@ -1,0 +1,9 @@
+{
+  "name": "Atelier de lectură - Lecția 14",
+  "short_name": "Lecția 14",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fffaf4",
+  "theme_color": "#2c9acb",
+  "lang": "ro"
+}
