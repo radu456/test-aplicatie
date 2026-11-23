@@ -1,0 +1,9 @@
+{
+  "name": "Atelier de lectură - Lecția 10",
+  "short_name": "Lecția 10",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fffaf4",
+  "theme_color": "#ecb22e",
+  "lang": "ro"
+}
