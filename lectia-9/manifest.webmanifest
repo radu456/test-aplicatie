@@ -1,0 +1,9 @@
+{
+  "name": "Atelier de lectură - Lecția 9",
+  "short_name": "Lecția 9",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fffaf4",
+  "theme_color": "#ff7b54",
+  "lang": "ro"
+}
