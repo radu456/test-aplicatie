@@ -1,9 +1,0 @@
-{
-  "name": "Atelier de lectură - Lecția 11",
-  "short_name": "Lecția 11",
-  "start_url": "./",
-  "display": "standalone",
-  "background_color": "#fffaf4",
-  "theme_color": "#5f67d8",
-  "lang": "ro"
-}
